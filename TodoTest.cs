@@ -13,11 +13,10 @@ namespace Assignment3_UnitTest
         {
             //Arrange
             //Test for take in todoId(int) and a description(String)
-            int todoId= 0;
             string description = "";
 
             //Act
-            Todo result = new Todo(todoId, description);
+            Todo result = new Todo(description);
 
             //Assert
             Assert.NotNull(result);

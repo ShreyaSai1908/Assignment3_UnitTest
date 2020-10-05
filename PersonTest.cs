@@ -18,8 +18,9 @@ namespace Assignment3_UnitTest
             Person result = new Person(firstName, lastName);
 
             //Assert
-            Assert.NotNull(result);           
-            
+            Assert.NotNull(result);     // to test that if the object is null or not
+
+
         }
 
         [Fact]
@@ -34,7 +35,7 @@ namespace Assignment3_UnitTest
             Person result = new Person(firstName, lastName);
 
             //Assert
-            Assert.NotNull(result);
+            Assert.NotNull(result);    // to test that if the object is empty or not
 
         }
 
@@ -50,7 +51,7 @@ namespace Assignment3_UnitTest
             Person result = new Person(firstName, lastName);
 
             //Assert
-            Assert.NotNull(result);
+            Assert.NotNull(result);   // to test that if the object is created or not
 
         }
 

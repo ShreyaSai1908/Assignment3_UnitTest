@@ -49,7 +49,7 @@ namespace Assignment3_UnitTest
             Assert.Equal(expectedTodoArraySize, actualTodoArraySize); //here the expected todoArray size is 0
 
             //Act
-            Todo todo = new Todo(1, "First Todo");
+            Todo todo = new Todo("First Todo");
             todoItems.addToDoToTodoItemsArray(todo);
             expectedTodoArraySize++;
             actualTodoArraySize = todoItems.Size();
@@ -127,9 +127,9 @@ namespace Assignment3_UnitTest
             Todo[] allDoneToDo;
             TodoItems todoItems = new TodoItems();
 
-            Todo todo1 = new Todo(1, "First Todo - Done");
-            Todo todo2 = new Todo(2, "Second Todo - Ongoing");
-            Todo todo3 = new Todo(3, "Third Todo - Done");
+            Todo todo1 = new Todo("First Todo - Done");
+            Todo todo2 = new Todo("Second Todo - Ongoing");
+            Todo todo3 = new Todo("Third Todo - Done");
 
             //Act
             todo1.Done = true;
@@ -158,9 +158,9 @@ namespace Assignment3_UnitTest
             Todo[] allMatchingToDo;
             TodoItems todoItems = new TodoItems();           
 
-            Todo todo1 = new Todo(1, "First Todo");
-            Todo todo2 = new Todo(2, "Second Todo");
-            Todo todo3 = new Todo(3, "Third Todo");
+            Todo todo1 = new Todo("First Todo");
+            Todo todo2 = new Todo("Second Todo");
+            Todo todo3 = new Todo("Third Todo");
 
             Person p1 = new Person(1,"TestPerson", "Lname1");
             Person p2 = new Person(2,"AnyPerson", "Lname2");
@@ -193,9 +193,9 @@ namespace Assignment3_UnitTest
             Todo[] allMatchingToDo;
             TodoItems todoItems = new TodoItems();
 
-            Todo todo1 = new Todo(1, "First Todo");
-            Todo todo2 = new Todo(2, "Second Todo");
-            Todo todo3 = new Todo(3, "Third Todo");
+            Todo todo1 = new Todo("First Todo");
+            Todo todo2 = new Todo("Second Todo");
+            Todo todo3 = new Todo("Third Todo");
 
             Person p1 = new Person(1, "TestPerson", "Lname1");
             Person p2 = new Person(2, "AnyPerson", "Lname2");
@@ -228,9 +228,9 @@ namespace Assignment3_UnitTest
             Todo[] allMatchingToDo;
             TodoItems todoItems = new TodoItems();
 
-            Todo todo1 = new Todo(1, "First Todo");
-            Todo todo2 = new Todo(2, "Second Todo");
-            Todo todo3 = new Todo(3, "Third Todo");
+            Todo todo1 = new Todo("First Todo");
+            Todo todo2 = new Todo("Second Todo");
+            Todo todo3 = new Todo("Third Todo");
 
             Person p1 = new Person(1, "TestPerson", "Lname1");
             Person p2 = new Person(2, "AnyPerson", "Lname2");
@@ -259,9 +259,9 @@ namespace Assignment3_UnitTest
             Todo[] allLeftToDo;
             TodoItems todoItems = new TodoItems();
 
-            Todo todo1 = new Todo(1, "First Todo");
-            Todo todo2 = new Todo(2, "Second Todo");
-            Todo todo3 = new Todo(3, "Third Todo");
+            Todo todo1 = new Todo("First Todo");
+            Todo todo2 = new Todo("Second Todo");
+            Todo todo3 = new Todo("Third Todo");
 
             //Act
             todoItems.addToDoToTodoItemsArray(todo1);

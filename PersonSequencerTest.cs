@@ -12,8 +12,8 @@ namespace Assignment3_UnitTest
         public void PersonIDTest2()
         {
             //Arrange
-            int expectedPersonIdValue = 0;
-            int actualPersonIDValue = 0;
+            int expectedPersonIdValue=0;  //this variable is used to set what should be the expected outcome of the test
+            int actualPersonIDValue=0;     //this variable is used to contain the value that is actually getting calculated by the method
 
             //Act
             actualPersonIDValue = PersonSequencer.nextPersonId();
@@ -31,9 +31,11 @@ namespace Assignment3_UnitTest
             int actualPersonIDValue = 0;
 
             //Act
-            PersonSequencer.reset();
-            actualPersonIDValue = PersonSequencer.PersonId;
-            
+            PersonSequencer.reset(); // reset the personid value to 0
+            actualPersonIDValue = PersonSequencer.nextPersonId();  // again increment by 1
+
+            expectedPersonIDValue++;   // expected value set to 1
+
             //Assert
             Assert.Equal(expectedPersonIDValue, actualPersonIDValue);
         }
