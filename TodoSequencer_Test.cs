@@ -17,8 +17,8 @@ namespace Assignment3_UnitTest
             int actualTodoIDValue = 0;
 
             //Act
-            TodoSequencer.TodoId = 0;
-            actualTodoIDValue = TodoSequencer.TodoId;
+            TodoSequencer.reset();
+            actualTodoIDValue = TodoSequencer.todoId;
 
             //Assert
             Assert.Equal(expectedTodoIdValue, actualTodoIDValue);
@@ -33,9 +33,9 @@ namespace Assignment3_UnitTest
             int actualTodoIDValue = 0;
 
             //Act
-            TodoSequencer.TodoId = 0;
+            TodoSequencer.reset();
             TodoSequencer.nextToDoId();
-            actualTodoIDValue = TodoSequencer.TodoId;
+            actualTodoIDValue = TodoSequencer.todoId;
             expectedTodoIdValue++;
 
             //Assert
@@ -52,9 +52,9 @@ namespace Assignment3_UnitTest
             int actualTodoIDValue = 0;
 
             //Act
-            TodoSequencer.TodoId = 9;
+            TodoSequencer.nextToDoId(); //sets a non zero toDoId value
             TodoSequencer.reset();
-            actualTodoIDValue = TodoSequencer.TodoId;
+            actualTodoIDValue = TodoSequencer.todoId;
 
             //Assert
             Assert.Equal(expectedTodoIdValue, actualTodoIDValue);
